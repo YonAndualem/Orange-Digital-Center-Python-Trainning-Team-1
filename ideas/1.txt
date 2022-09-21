@@ -1,0 +1,51 @@
+# Define our function
+def calculate():
+    operation = input('''
+Enter the math operation you want to perform by typing:
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+''')
+
+    num1 = int(input('Please enter the first number: '))
+    num2 = int(input('Please enter the second number: '))
+# Addition
+    if operation == '+':
+        print('{} + {} = '.format(num1, num2))
+        print(num1 + num2)
+# Subtraction
+    elif operation == '-':
+        print('{} - {} = '.format(num1, num2))
+        print(num1 - num2)
+# Multiplication
+    elif operation == '*':
+        print('{} * {} = '.format(num1, num2))
+        print(num1 * num2)
+# Division
+    elif operation == '/':
+        print('{} / {} = '.format(num1, num2))
+        print(num1 / num2)
+
+    else:
+        print('If you entered an invalid operator, execute the program once again..')
+
+    # Add again() function to calculate() function
+    again()
+
+def again():
+    calc_again = input('''
+Would you like to recalculate??
+Enter Y for YES and N for NO..
+''')
+#Execute the compute() method if the user types Y.
+    if calc_again.upper() == 'Y':
+        calculate()
+ #Say goodbye to the user and finish the program if the user types N.       
+    elif calc_again.upper() == 'N':
+        print('We will meet soon.')
+#Run the code once more if the user presses another key.
+    else:
+        again()
+
+calculate()
