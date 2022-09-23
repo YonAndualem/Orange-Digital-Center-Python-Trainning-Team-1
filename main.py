@@ -28,7 +28,7 @@ def floor_division(x, y):
 print("*** Orange Digital Center Python Trainning***".center(100))
 print("********Team 1 - Calculator Project**********".center(100))
 print('─' * 100)
-print("Select an operation.".center(100))
+print("Welcome to the Calculator, Please select an operation from the list.".center(100))
 print("1.Add".center(100))
 print("2.Subtract".center(100))
 print("3.Multiply".center(100))
@@ -42,11 +42,11 @@ print("9. Floor Division".center(100))
 while True:
     # take input from the user
     choice = input("Enter choice(1/2/3/4/5/6/7/8/9): ")
-
+#Input
     if choice in ('1', '2', '3', '4','5','7','8','9'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-
+#IF_Codes
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
@@ -70,7 +70,7 @@ while True:
             print("The remainder when we divide {} by {} is {}".format(num1, num2, remainder(num1, num2)))
         elif choice == '9':
             print(num1, "//", num2, "=", floor_division(num1, num2))
-
+#Exit_question
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
             print("Thank you!!!".center(100))
