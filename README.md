@@ -1,3 +1,4 @@
 # Orange-Digital-Center-Python-Trainning-Team-1
 ODC Python Project Team 1 - Calculator
-![image](https://user-images.githubusercontent.com/104837049/191496042-745d2bb3-76f1-4d9f-843d-fb595b9c9793.png)
+![image](https://user-images.githubusercontent.com/104837049/191903236-dbe2deb1-78c5-408a-a496-60ca3b8d41cc.png)
+
